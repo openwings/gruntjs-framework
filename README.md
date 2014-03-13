@@ -14,16 +14,16 @@
 
 ## 准备步骤
 1. 安装node
-    (http://nodejs.org/)[如何安装]
+   [如何安装](http://nodejs.org/)
 1. 安装npm
-    (http://npmjs.org/)[如何安装]
+    [如何安装](http://npmjs.org/)
 1. 安装grunt-cli
     npm install grunt-cli -g
 
 ## 操作步骤（专业前端开发版本）
 1. npm install lz-fe
 1. 进入目录，安装全部的依赖包 npm install
-    (http://edui.alibaba-inc.com)[发生问题如何处理？]
+    [发生问题如何处理？](http://edui.alibaba-inc.com)
     > 或者安装你指定需要的task包：npm install taskPackageName --save-dev
     > load-grunt-tasks这个npm包是用来管理所有在package.json文件内需要调用的包的管理器，有了她可以很简单的使用
     ```javascript
