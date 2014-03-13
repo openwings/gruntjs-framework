@@ -1,0 +1,404 @@
+@charset "UTF-8";
+/*  define some common vars */
+/* define common class name */
+.selectedStyle {
+  width: 50px;
+  float: left;
+  text-align: center;
+}
+.selectedName {
+  width: 25%;
+  min-width: 164px;
+  height: 80px;
+  float: left;
+  overflow: hidden;
+}
+.nameCommon {
+  width: 100%;
+  min-width: 690px;
+  overflow: hidden;
+}
+.nameCommonB {
+  width: 100%;
+  min-width: 164px;
+  float: left;
+  overflow: hidden;
+}
+/* define common functions */
+.header {
+  min-width: 690px;
+  width: 100%;
+  height: 66px;
+  background-color: #375878;
+  overflow: hidden;
+}
+.header .logo {
+  width: 180px;
+  height: 27px;
+  margin-top: 20px;
+  float: left;
+  margin-left: 14px;
+}
+.header .menu {
+  width: 160px;
+  float: right;
+  margin-right: 14px;
+  margin-top: 10px;
+}
+.header .menu ul li {
+  width: 50px;
+  float: left;
+  margin-right: 30px;
+}
+.header .menu ul li a {
+  text-decoration: none;
+}
+.header .menu ul li a.zb {
+  width: 50px;
+  float: left;
+  text-align: center;
+  padding-top: 32px;
+  background: url(../images/zhibo_blue.png) no-repeat center top;
+  color: #79d8ff;
+}
+.header .menu ul li a.zb:hover {
+  width: 50px;
+  float: left;
+  text-align: center;
+  height: 60px;
+  padding-top: 32px;
+  background: url(../images/zhibo.png) no-repeat center top;
+  color: #fff;
+}
+.header .menu ul li a.rb {
+  width: 50px;
+  float: left;
+  text-align: center;
+  height: 60px;
+  padding-top: 32px;
+  background: url(../images/rb_blue.png) no-repeat center top;
+  color: #79d8ff;
+}
+.header .menu ul li a.rb:hover {
+  width: 50px;
+  float: left;
+  text-align: center;
+  height: 60px;
+  padding-top: 32px;
+  background: url(../images/rb.png) no-repeat center top;
+  color: #fff;
+}
+.header .menu ul li a.rb_on {
+  width: 50px;
+  float: left;
+  text-align: center;
+  height: 60px;
+  padding-top: 32px;
+  background: url(../images/rb.png) no-repeat center top;
+  color: #fff;
+  cursor: default;
+}
+.header .menu ul li a.zb_on {
+  width: 50px;
+  float: left;
+  text-align: center;
+  height: 60px;
+  padding-top: 32px;
+  background: url(../images/zhibo.png) no-repeat center top;
+  color: #fff;
+  cursor: default;
+}
+.name {
+  width: 100%;
+  min-width: 690px;
+  overflow: hidden;
+}
+.name ul {
+  width: 100%;
+  min-width: 690px;
+  overflow: hidden;
+  height: 84px;
+}
+.name ul li {
+  width: 25%;
+  min-width: 164px;
+  height: 80px;
+  float: left;
+  overflow: hidden;
+  border-bottom: 1px solid #e0e4e6;
+}
+.name ul li:hover {
+  width: 25%;
+  min-width: 164px;
+  height: 80px;
+  float: left;
+  overflow: hidden;
+  background: #f8f8f8;
+  border-bottom: 1px solid #d8e8d8;
+  cursor: pointer;
+}
+.name ul li.on {
+  width: 25%;
+  min-width: 164px;
+  height: 80px;
+  float: left;
+  overflow: hidden;
+  background: #e8f6fc;
+}
+.name ul li h1 {
+  width: 100%;
+  min-width: 164px;
+  float: left;
+  overflow: hidden;
+  padding-left: 20px;
+  font-size: 12px;
+  color: #333;
+  font-weight: 100;
+  line-height: 24px;
+}
+.name ul li .bijiao {
+  width: 100%;
+  min-width: 164px;
+  float: left;
+  overflow: hidden;
+  margin-top: 4px;
+  padding-left: 20px;
+  color: #000;
+}
+.name ul li .num {
+  width: 100%;
+  min-width: 164px;
+  float: left;
+  overflow: hidden;
+  margin-top: 4px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: #666;
+  text-align: left;
+  line-height: 30px;
+}
+a.nochange {
+  padding-right: 14px;
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 6px;
+}
+a.drop {
+  background: url(../images/xiajiang.png) no-repeat right 2px;
+  padding-right: 14px;
+  color: #46a501;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 6px;
+}
+a.rise {
+  background: url(../images/shangsheng.png) no-repeat right 2px;
+  padding-right: 14px;
+  color: #f72900;
+  font-size: 12px;
+  text-decoration: none;
+  margin-left: 6px;
+}
+.loading {
+  text-align: center;
+  padding: 20px 10px;
+  clear: both;
+}
+.time {
+  width: 100%;
+  min-width: 690px;
+  float: left;
+  overflow: hidden;
+  height: 48px;
+  border-bottom: 1px solid #e8e8e8;
+  background: url(../images/time_bg.jpg) repeat-x left 0px;
+}
+.time .date1 {
+  width: 378px;
+  float: left;
+}
+.time a.chose:link,
+.time a.chose:visited {
+  background: url(../images/date_visited.gif) no-repeat;
+  float: left;
+  margin: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #8d8d8d;
+  width: 88px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+}
+.time a.chose:hover {
+  background: url(../images/date_bg.gif) no-repeat;
+  width: 88px;
+  height: 23px;
+  line-height: 23px;
+  color: #ffffff;
+  float: left;
+  margin: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+.time a.nochose {
+  background: url(../images/nochose.gif) no-repeat;
+  float: left;
+  margin: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #cacaca;
+  width: 88px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  cursor: default;
+}
+.time p {
+  text-align: center;
+  float: left;
+  line-height: 47px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin-left: 20px;
+}
+.time input.bj {
+  width: 145px;
+  height: 23px;
+  border: 1px solid #e3e3e3;
+  margin: 10px 0px 0px 5px;
+  float: left;
+  background: url(../images/rili.gif) no-repeat 120px 3px;
+  color: #000000;
+  font-family: Arial;
+  text-indent: 0.5em;
+}
+.time input.btn {
+  width: 65px;
+  height: 27px;
+  float: left;
+  margin: 10px 0px 0px 0px;
+  background: url(../images/btn_bg.jpg) no-repeat;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.heath {
+  width: 100%;
+  min-width: 690px;
+  overflow: hidden;
+  float: left;
+}
+.heath ul {
+  width: 100%;
+  min-width: 690px;
+  height: 162px;
+  overflow: hidden;
+}
+.heath ul li {
+  width: 33.33%;
+  min-width: 230px;
+  height: 80px;
+  float: left;
+  border-bottom: 1px solid #e0e4e6;
+  overflow: hidden;
+  cursor: pointer;
+}
+.heath ul li:hover {
+  width: 33.33%;
+  min-width: 230px;
+  height: 80px;
+  float: left;
+  background: #f8f8f8;
+  border-bottom: 1px solid #d8e8d8;
+  overflow: hidden;
+}
+.heath ul li.on {
+  width: 33.33%;
+  min-width: 230px;
+  height: 80px;
+  float: left;
+  background: #e8f6fc;
+  overflow: hidden;
+}
+.heath ul li h1 {
+  width: 100%;
+  min-width: 230px;
+  padding-left: 20px;
+  font-size: 12px;
+  color: #333;
+  float: left;
+  font-weight: 100;
+  line-height: 24px;
+  overflow: hidden;
+}
+.heath ul li .bijiao {
+  width: 100%;
+  min-width: 230px;
+  margin-top: 4px;
+  float: left;
+  padding-left: 20px;
+  color: #000;
+  overflow: hidden;
+}
+.heath ul li .num {
+  width: 100%;
+  min-width: 230px;
+  margin-top: 4px;
+  padding-left: 20px;
+  float: left;
+  font-size: 20px;
+  color: #666;
+  text-align: left;
+  line-height: 30px;
+  overflow: hidden;
+}
+.value {
+  width: 99%;
+  min-width: 695px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.value table {
+  width: 99%;
+  min-width: 695px;
+  border-collapse: collapse;
+}
+.value table tr th {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e4e6;
+  height: 36px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+.value table tr th tr th span {
+  margin-left: 10px;
+}
+.value table tr th tr th span.red {
+  color: #f72900;
+  margin-left: 10px;
+}
+.value table tr th tr th span.block {
+  color: #333;
+  margin-left: 10px;
+}
+.value table tr td {
+  border: 1px solid #e0e4e6;
+  font-size: 12px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.showMe {
+  width: 100%;
+  height: 100%;
+}

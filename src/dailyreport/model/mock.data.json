@@ -1,0 +1,22 @@
+{
+    "message":"测试内容","res":
+    {
+        "category":
+        {
+            "category_shop_num":80040,"section_shop_num":"1209","uv_change":"0.0000","avg_alipay_convert":"0.0115","alipay_change":"0.0944","avg_service_score":"4.85399","total_pv":7386752,"price_section_upper":"5.1","avg_convert_change":"-0.0650","avg_avg_user_alipay":"31.02","pv_change":"0.2122","avg_user_alipay_change":"0.0835","day":"2013-02-26","total_alipay_trade_amt":"321312.32","price_section_lower":"4.4","avg_service_change":"0.0000","category_name":"居家日用/婚庆/创意礼品","total_uv":1923983
+        }
+        ,"shop":
+        {
+            "rank_user_alipay":"839","category_id":"21","rank_alipay_trade_amt":11739,"alipay_convert_change":"-1.0000","price_section_id":"22","rank_uv":26447,"service_score_change":"-","service_score":"0","alipay_trade_amt":"2382132189.298","pv":23114329,"rank_uv_num":"7","convert_auction":
+            {
+                "pic_url":"http://gju2.alicdn.com/bao/uploaded/i3/T1Pc8zFCJvXXb1upjX.jpg","item_id":5,"title":"成交转化率最高的宝贝","item_url":"http://www.taobao.com"
+            }
+            ,"day":"2013-02-26","avg_user_alipay_change":"-0.0000","uv":437829479,"avg_user_alipay":"-1","trade_auction":
+            {
+                "pic_url":"http://gju2.alicdn.com/bao/uploaded/i3/T1Pc8zFCJvXXb1upjX.jpg","item_id":5,"title":"成交金额最高宝贝","item_url":"http://www.taobao.com"
+            }
+            ,"pv_change":"-","alipay_trade_amt_change":"232121.32","rank_pv_num":"-2936","shop_type":"0","alipay_convert":"0.98765","rank_pv":27323,"rank_alipay_trade_amt_num":"321321.32","rank_user_alipay_num":"221","pv_src_name": "pv_src_name的"
+        }
+    }
+    ,"rCode":"0"
+}

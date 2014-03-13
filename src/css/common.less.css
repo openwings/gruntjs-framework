@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font: 12px/1.231 arial, "微软雅黑", "宋体";
+  color: #000;
+  background: #fff;
+}
+div,
+form,
+p,
+img,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+.wapper {
+  min-width: 690px;
+  width: 100;
+  min-height: 499px;
+  height: 100;
+}
