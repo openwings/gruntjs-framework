@@ -12,24 +12,30 @@
 1. 要学会基本的node系统的调试方法：
 `debugger断点`、`console打印`、`nodejs调试的浏览器插件`，去搜索吧
 
-# 准备步骤
+## 准备步骤
 1. 安装node
+    (http://nodejs.org/)[如何安装]
 1. 安装npm
+    (http://npmjs.org/)[如何安装]
 1. 安装grunt-cli
-1. 安装yeomen
-# 操作步骤（专业前端开发版本）
+    npm install grunt-cli -g
+
+## 操作步骤（专业前端开发版本）
 1. npm install lz-fe
-1. 安装全部的依赖包 npm install
+1. 进入目录，安装全部的依赖包 npm install
+    (http://edui.alibaba-inc.com)[发生问题如何处理？]
     > 或者安装你指定需要的task包：npm install taskPackageName --save-dev
     > load-grunt-tasks这个npm包是用来管理所有在package.json文件内需要调用的包的管理器，有了她可以很简单的使用
-    `
-module.exports = function(grunt){
-
-    // load all grunt tasks
-    require('load-grunt-tasks')(grunt);
-    `
+    ```javascript
+        module.exports = function (grunt) {
+            // load all grunt tasks
+            require('load-grunt-tasks')(grunt);
+        }
+    ```
     这样来完成所有需要
-    `grunt.loadNpmTasks('grunt-contrib-qunit');`
+    ```javascript
+        grunt.loadNpmTasks('grunt-contrib-qunit');
+    ```
     调用的任务包
 1. 配置你需要的Gruntfile.js
     > 实际上：我已经提供了默认的Gruntfile.js，只需要配置其中几个小的地方，比如：
