@@ -52,11 +52,13 @@
 
 ### 如何配置镜像：
 
-    1. 如何配置国内npm镜像：
+    如何配置国内npm镜像：
+    
         ```bash
          sh bin/cnpm.sh
         ```
-    1. 如何配置国外npm镜像：
+    如何配置国外npm镜像：
+    
       ```bash
          sh bin/npm.sh
       ```
@@ -81,12 +83,14 @@ npm search xxxxx
 ### 配置过程中的一些坑爹：
 1. copy时通过使用`process的过滤函数`可以过滤掉一些复制文本的内容，但是这货貌似也会过滤图象之类的文本内容，导致图象文件破损，加载失败
     > `解决方案：`过滤时判断文件类型，需要的再去过滤，此处需要参考grunt API或者在第二个参数路径名中进行判断
-    ```bash
+    
+   ```bash
     process: function (content, srcPath) {
         if (/\.html$/.test(srcPath)) {
             //do some filter things
         }
-    }```
+    }
+   ```
 
 
 *****************************************
