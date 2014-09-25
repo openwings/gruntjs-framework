@@ -4,9 +4,9 @@
  * */
 
 var devModel = true,
-    devPath = 'http://rap.alibaba-inc.com',
-    realPath = 'http://liuliang.taobao.com'.
-    dailyPath = 'http://liuliang.daily.taobao.net';
+    devPath = 'http://dev.com',
+    realPath = 'http://real.com'.
+    dailyPath = 'http://liuliang.daily.dev.com';
 
 var LIVERELOAD_PORT = 9991;
 var SERVER_PORT = 9966;
